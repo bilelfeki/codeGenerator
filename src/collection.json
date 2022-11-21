@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+      "user": {
+        "description": "Generate a service in the project.",
+        "factory": "./user/index#userAdmin",
+        "schema": "./user/schema.json"
+      },
+    "admin": {
+      "description": "Generate a service in the project.",
+      "factory": "./admin/index#userAdmin",
+      "schema": "./admin/schema.json"
+    }
+  }
+}
